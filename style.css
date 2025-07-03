@@ -1,0 +1,174 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 400px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #ff6699;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.option {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    position: relative;
+    cursor: pointer;
+}
+
+.option label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.option input[type="radio"] {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.discount {
+    background-color: #ff6699;
+    color: white;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    margin-right: 10px;
+}
+
+.details {
+    flex: 1;
+}
+
+.price {
+    text-align: right;
+}
+
+.price strong {
+    display: block;
+    font-size: 16px;
+}
+
+.strike {
+    text-decoration: line-through;
+    font-size: 12px;
+    color: gray;
+}
+
+.most-popular {
+    border: 2px solid #ff6699;
+    position: relative;
+}
+
+.popular-badge {
+    position: absolute;
+    top: -10px;
+    right: -2px;
+    background-color: #ff6699;
+    color: white;
+    padding: 2px 10px;
+    font-size: 12px;
+    border-radius: 0 0 4px 4px;
+}
+
+.selectors {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.5s ease;
+}
+
+.selector {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.selectors.show {
+    max-height: 500px;
+    opacity: 1;
+}
+
+.selector span {
+    margin-right: 10px;
+}
+
+.selector select {
+    margin-right: 10px;
+    padding: 5px;
+}
+
+.delivery {
+    color: #ff6699;
+    margin-bottom: 10px;
+}
+
+.total {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #ff6699;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #ff4d88;
+}
+
+.footer {
+    text-align: center;
+    font-size: 12px;
+    color: gray;
+    margin-top: 15px;
+}
+
+.selectors.active {
+    max-height: 500px;
+    display: none;
+    margin-top: 10px;
+}
+
+.option {
+    border: 2px solid #ccc;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease, max-height 0.5s ease;
+    cursor: pointer;
+    max-height: 100px;
+}
+
+
+.option.active {
+    max-height: 500px;
+    border-color: #ff5c8d;
+    background-color: #fff0f5;
+}
+
+
+.option.active .selectors {
+    max-height: 300px;
+}
